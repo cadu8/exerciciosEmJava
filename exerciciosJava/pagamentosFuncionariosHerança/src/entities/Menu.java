@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Menu {
+public final class Menu {
 	Employee employee;
 	Scanner sc = new Scanner(System.in);
 	List<Employee> employeeList = new ArrayList<>();

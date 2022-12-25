@@ -8,24 +8,40 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Menu {
+	
 	Scanner sc = new Scanner(System.in);
-	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/aaaa");
+	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 	
 	List<Product> productList = new ArrayList<>();
 	
 	public void menu() throws ParseException {
-		subMenu();
+		subMenuPrincipal();
 	}
-	
-	public void subMenu() throws ParseException {
+	public void subMenuPrincipal() throws ParseException{
+		System.out.println("--Welcome--");
+		System.out.println("1 - Add tag");
+		System.out.println("2 - Tag");
+		System.out.println("3 - Finish");
+		String verificador =  sc.nextLine();
 		
+		switch(verificador) {
+		case "1":
+			subMenu();
+			subMenuPrincipal();
+		case "2":
+			mostrarLista();
+			subMenuPrincipal();
+			break;
+		case "3":
+			System.out.println("closed");
+			break;
+		}
+	}
+	public void subMenu() throws ParseException {
 		System.out.println("Produto data:");
 		System.out.println("1 - Imported");
 		System.out.println("2 - Used");
 		System.out.println("3 - Common");
-		System.out.println("4 - Tags");
-		System.out.println("5 - Finish");
-		sc.nextLine();
 		String verificador = sc.nextLine();
 		
 		if(verificador.equals("1")) {
@@ -36,8 +52,8 @@ public class Menu {
 			System.out.print("Customs fee: ");
 			Double customsFee = sc.nextDouble();
 			//adicionamos a subclasse ImoportedProduct na lista productlist (classe mae)
+			
 			productList.add(new ImoportedProduct(name, price, customsFee));
-			subMenu();
 		}else if(verificador.equals("2")) {
 			System.out.print("Name: ");
 			String name = sc.nextLine();
@@ -47,7 +63,6 @@ public class Menu {
 			Date date = sdf.parse(sc.next());
 			//adicionamos a subclasse UsedProduct na lista productlist (classe mae)
 			productList.add(new UsedProduct(name, price, date));
-			subMenu();
 		}
 		else if(verificador.equals("3")) {
 			System.out.print("Name: ");
@@ -56,16 +71,12 @@ public class Menu {
 			Double price = sc.nextDouble();
 			
 			productList.add(new Product(name, price));
-			subMenu();
 		}
-		else if(verificador.equals("4")) {
+	}
+	public void mostrarLista() {
 			for(Product c : productList) {
 				System.out.println(c.priceTag());
 			}
-			subMenu();
 		}
-		else if(verificador.equals("5")) {
-			System.out.println("FINISH");
-		}
-	}
+	
 }

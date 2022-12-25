@@ -25,8 +25,8 @@ public class ImoportedProduct extends Product{
 	public String priceTag() {
 		return   "Name: "
 				+ getName()
-				+ "\n Price: "
-				+ String.format("%.2f%n",totalPrice())
-				+ String.format("(Customs fee: $ %.2f%n", customFee);
+				+ " $ "
+				+ String.format("%.2f",totalPrice())
+				+ String.format("( Customs fee: $ %.2f%n)", customFee);
 	}
 }

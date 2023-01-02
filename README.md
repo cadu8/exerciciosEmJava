@@ -13,3 +13,7 @@
 <a href="https://github.com/cadu8/exerciciosEmJava/tree/main/exerciciosJava/produtoEtiqueta"> <li>produtoEtiqueta</li> </a>
 <a href="https://github.com/cadu8/exerciciosEmJava/tree/main/exerciciosJava/sumarioPedidos"> <li>sumarioPedidos</li> </a>
 </ul>
+<h2>Exceções</h2>
+<p>Exercicios com o foco no aprendizado em Exceções</p>
+<a href="https://github.com/cadu8/exerciciosEmJava/tree/main/exerciciosJava/excecoes1"> <li>excecoes1</li> </a>
+

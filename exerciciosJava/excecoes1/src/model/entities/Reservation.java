@@ -25,8 +25,8 @@ public class Reservation {
 	public void setRoomNumber(Integer roomNumber) {
 		this.roomNumber = roomNumber;
 	}
-	public void setCheckIn(Date checkIn) {
-		this.checkIn = checkIn;
+	public Date getCheckIn() {
+		return checkIn;
 	}
 	public Date getCheckOut() {
 		return checkOut;
@@ -34,7 +34,7 @@ public class Reservation {
 
 	public long duration() {
 		long diff = checkOut.getTime() - checkIn.getTime();
-		return TimeUnit.DAYS.convert(diff, TimeUnit.MICROSECONDS);
+		return TimeUnit.DAYS.convert(diff, TimeUnit.MILLISECONDS);
 	}
 	
 	public void updateDates(Date checkIn, Date checkOut) {

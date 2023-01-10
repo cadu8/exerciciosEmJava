@@ -16,4 +16,5 @@
 <h2>Exceções</h2>
 <p>Exercicios com o foco no aprendizado em Exceções</p>
 <a href="https://github.com/cadu8/exerciciosEmJava/tree/main/exerciciosJava/excecoes1"> <li>excecoes1</li> </a>
-
+<h2>Pastas e Arquivos</h2>
+<a href="https://github.com/cadu8/exerciciosEmJava/tree/main/exerciciosJava/criandoPastasEArquivos"> <li>criandoPastasEArquivos</li> </a>

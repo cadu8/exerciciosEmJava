@@ -1,0 +1,2 @@
+module exercicio1Interface {
+}

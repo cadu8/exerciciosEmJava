@@ -1,4 +1,9 @@
 package priority;
+/**
+ * classe main que chama o metodo whoLikesIt da classe Methods
+ * @author Carlos Eduardo
+ * @version
+ */
 
 import entities.Methods;
 

@@ -1,9 +1,22 @@
 package entities;
-
+/**
+ * classe nao qual é responsavel por armazernar nomes em uma lista e 
+ * imprimir na tela a quantidade de likes de pessoas que curtiram
+ * @author Carlos Eduardo
+ * @version
+ * 
+ */
 import java.util.ArrayList;
 import java.util.List;
 
 public class Methods {
+	/**
+	 * armazena e imprime os nomes que deram Likes, se foram mais de 3
+	 * pessoas, ele imprime dois nome e poe a quantia em numeros de pessoas
+	 * que curtiram
+	 * @param
+	 * @return
+	 */
 	List<String> listNames = new ArrayList<String>();
 
 	

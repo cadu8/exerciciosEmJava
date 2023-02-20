@@ -1,5 +1,8 @@
 package priority;
-
+/**
+ * programa só para treinar a utilizaçao de herança
+ * @author carlos eduardo
+ */
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
